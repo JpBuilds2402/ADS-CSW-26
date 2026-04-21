@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Galeria de Mídias</title>
+    <style>
+        /* Estilização básica para a página não parecer de 1995 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 650px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        img {
+            max-width: 150px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Minha Galeria de Mídias</h1>
+        <p>Confira os vídeos e áudios abaixo</p>
+    </header>
+
+    <main class="container">
+        <a href="youtube.html" target="_blank">
+            <img src="midias/youtube.png" alt="Logo do YouTube">
+        </a>
+
+        <audio controls loop preload="metadata">
+            <source src="midias/hino-flamengo.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <video poster="midias/thumb.jpg" controls>
+            <source src="midias/videoplayback.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </main>
+
+</body>
+</html>

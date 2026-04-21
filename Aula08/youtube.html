@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Links do Youtube</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #cc0000;
+        }
+
+        .btn-voltar {
+            text-decoration: none;
+            color: #555;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .btn-voltar:hover {
+            background: #e4e4e4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* Diminuí um pouco a largura para links */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card-video {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Estilo do link que parece um botão */
+        .link-youtube {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ff0000;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .link-youtube:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha Lista de Vídeos</h1>
+    <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+
+    <div class="container">
+        
+        <div class="card-video">
+            <h3>Vídeo 1</h3>
+            <p>Clique abaixo para assistir no YouTube</p>
+            <a href="https://www.youtube.com/watch?v=9lnzmF5gRyw" target="_blank" class="link-youtube">Assistir Vídeo</a>
+        </div>
+
+        <div class="card-video">
+            <h3>Vídeo 2</h3>
+            <p>Clique abaixo para assistir no YouTube</p>
+            <a href="https://www.youtube.com/watch?v=_4p4gk1-m4E" target="_blank" class="link-youtube">Assistir Vídeo</a>
+        </div>
+
+        <div class="card-video">
+            <h3>Vídeo 3</h3>
+            <p>Clique abaixo para assistir no YouTube</p>
+            <a href="https://www.youtube.com/watch?v=75uVVG6KvDA" target="_blank" class="link-youtube">Assistir Vídeo</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
